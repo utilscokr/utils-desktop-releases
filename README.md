@@ -1,2 +1,38 @@
-# utils-desktop-releases
-UTILS desktop app downloads (utils.co.kr) - release builds and auto-update feed only
+# UTILS 데스크톱 앱 내려받기
+
+[utils.co.kr](https://utils.co.kr) 의 도구·공부·심심풀이를 트레이와 전역 단축키로 바로 여는 Windows·macOS 앱입니다.
+이 저장소에는 **빌드 결과(릴리스)만** 올라옵니다. 소스 코드는 비공개입니다.
+
+## 내려받기
+
+**최신 버전: <https://github.com/utilscokr/utils-desktop-releases/releases/latest>**
+
+| 파일 | 어떤 분께 | 자동 업데이트 |
+|---|---|---|
+| `UTILS_버전_x64-setup.exe` | **Windows 일반 사용자(권장).** 사용자 폴더에 설치되어 관리자 권한이 필요 없습니다. | 됩니다 |
+| `UTILS_버전_x64_en-US.msi` | 회사 PC 에 일괄 설치할 때. Program Files 에 설치됩니다. | 됩니다 |
+| `utils-desktop-v버전-windows-portable.zip` | 설치 권한이 없거나 설치 없이 써 보고 싶을 때. 압축을 풀고 `utils-desktop.exe` 를 실행합니다. | 안 됩니다. 새 버전이 나오면 알림만 뜨고, 새 파일을 받아 바꿔 주세요. |
+| `UTILS_버전_universal.dmg` | macOS 11 이상(Apple Silicon·Intel 공용) | 됩니다 |
+| `latest.json`, `*.sig`, `*.app.tar.gz` | 앱이 자동 업데이트에 쓰는 파일입니다. 직접 받을 필요가 없습니다. | |
+
+요건: Windows 10 1809 이상(WebView2 런타임 — 설치판은 없으면 설치 중에 받아 줍니다. 포터블은 런타임이 있어야 실행됩니다), macOS 11 이상.
+
+## 처음 실행할 때
+
+아직 코드 서명(게시자 인증)을 하지 않아 운영체제가 경고를 보일 수 있습니다.
+
+- **Windows SmartScreen** 「Windows 의 PC 보호」 창이 뜨면 **「추가 정보」 를 누른 뒤 「실행」** 을 누릅니다.
+- **macOS** 「확인되지 않은 개발자」·「손상되었기 때문에 열 수 없습니다」 가 뜨면 앱을 **우클릭 → 열기** 하거나, **시스템 설정 ▸ 개인정보 보호 및 보안** 맨 아래의 **「그래도 열기」** 를 누릅니다.
+
+## 업데이트
+
+설치판은 앱을 켠 지 10초 뒤와 하루에 한 번 새 버전을 확인합니다. 새 버전이 있으면 묻는 창이 뜨고, 「지금 업데이트」 를 누르면 내려받아 설치한 뒤 다시 열립니다. 바로 확인하려면 메뉴 **설정 ▸ 업데이트 확인** 또는 트레이 아이콘의 **업데이트 확인** 을 누릅니다.
+받은 파일은 서명을 확인한 뒤에만 설치하므로, 이 저장소의 릴리스가 아닌 파일은 설치되지 않습니다.
+
+## 수집하는 정보
+
+앱은 어떤 정보도 수집하거나 보내지 않습니다. 앱이 저장하는 것은 설정 폴더의 `state.json`(마지막 실행 버전·소식 창 기록·최근 연 도구)뿐이고 PC 밖으로 나가지 않습니다. 사이트 이용에 관한 내용은 [개인정보처리방침](https://utils.co.kr/privacy)을 참고해 주세요.
+
+## 문의·문제 신고
+
+[UTILS 커뮤니티](https://utils.co.kr/community) 에 남겨 주세요.
